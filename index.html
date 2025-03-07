@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WikiClone</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f8f9fa;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+        }
+        .search-box {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        .article-link {
+            display: block;
+            margin: 10px 0;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>WikiClone</h1>
+        <input type="text" class="search-box" id="search" placeholder="Search articles..." onkeyup="searchArticle()">
+        
+        <div id="articles">
+            <a href="article1.html" class="article-link">Magic School Bus</a>
+            <a href="article2.html" class="article-link">Massive</a>
+            <a href="article3.html" class="article-link">Milk/Cereal Satire</a>
+            <a href="article4.html" class="article-link">MICHAM/ THIRD WHEEL</a>
+            <a href="article5.html" class="article-link">PUNS</a>
+            <a href="article6.html" class="article-link">JEUL/MICKEY MOUSE</a>
+            <a href="article7.html" class="article-link">CONTEXT?</a>
+            <a href="article8.html" class="article-link">BI?</a>
+            <a href="article9.html" class="article-link">TARIFFS/CONFESSION</a>
+            <a href="article10.html" class="article-link">TUMBLR/ARG/PINEAPPLE</a>
+            <a href="article11.html" class="article-link">IGOR</a>
+            <a href="article12.html" class="article-link">CHAPPELL ROAN</a>
+            <a href="article13.html" class="article-link">DEATH ROW</a>
+            <a href="article14.html" class="article-link">DUMMY 13/ MOAI LORE</a>
+            <a href="article15.html" class="article-link">TYRONE</a>
+            <a href="article16.html" class="article-link">LITTLE JOHN</a>
+            <a href="article17.html" class="article-link">PLUTONIUM MINE</a>
+            <a href="article18.html" class="article-link">STRIKE POINT</a>
+            <a href="article19.html" class="article-link">MASK MAN/ MOWER MAN</a>
+            <a href="article10.html" class="article-link">ADUM, LIDUM, DUMBRIEL, MICHDUM</a>
+            <a href="article21.html" class="article-link">GABRIEL trump SUPPORTER</a>
+            <a href="article22.html" class="article-link">SHEO</a>
+            <a href="article23.html" class="article-link">TORGAN 454 [BUCKWHEATN'</a>
+            <a href="article24.html" class="article-link">GAYMERS</a>
+            <a href="article25.html" class="article-link">CHROMAKOPIA</a>
+            <a href="article26.html" class="article-link">CULTS</a>
+            <a href="article27.html" class="article-link">JESUS FANDOM+ JESUS+ JESUS CLICKER</a>
+            <a href="article28.html" class="article-link">SCOTLAND V IRELAND</a>
+            <a href="article29.html" class="article-link">HOOTY</a>
+            <a href="article30.html" class="article-link">KRUNGUS</a>
+        </div>
+    </div>
+    
+    <script>
+        function searchArticle() {
+            let input = document.getElementById('search').value.toLowerCase();
+            let links = document.querySelectorAll('.article-link');
+            
+            links.forEach(link => {
+                if (link.innerText.toLowerCase().includes(input)) {
+                    link.style.display = "block";
+                } else {
+                    link.style.display = "none";
+                }
+            });
+        }
+    </script>
+</body>
+</html>
